@@ -1,8 +1,40 @@
-@import 'resets.scss'
 @import 'normalizez.scss'
+@import 'resets.scss'
 
 *
     box-sizing: border-box
 
-h1
-    color: red
+a
+    text-decoration: none
+    color: #000
+    transition: color .3s ease-in
+    &:hover
+        color: #c3c3c3
+
+.container
+    max-width: 1140px
+    margin: 0 auto
+
+.main-section
+    height: 800px
+    padding-top: 16px
+    background: #F0F0F0
+    &__nav-container
+        height: 69px
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+.logo-link
+    &__img
+        width: 134px
+        height: 69px
+
+.nav-menu
+    &__list
+        display: flex
+    &__list-item
+        margin-right: 64px
+        font-size: 18px
+        &:last-child
+            margin-right: 0
