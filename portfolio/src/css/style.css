@@ -381,7 +381,7 @@ a:hover {
 
 .main-section {
   position: relative;
-  height: 800px;
+  min-height: 800px;
   padding-top: 16px;
   background: #F0F0F0;
   overflow: hidden;
@@ -399,7 +399,7 @@ a:hover {
 .main-section__first-elipse {
   position: absolute;
   top: 129px;
-  right: 34px;
+  right: 60px;
 }
 .main-section__second-elipse {
   position: absolute;
@@ -565,4 +565,83 @@ a:hover {
 .elipse__subtract_big {
   width: 188px;
   height: 188px;
+}
+
+.second-section {
+  min-height: 700px;
+  padding-top: 32px;
+}
+.second-section__container {
+  position: relative;
+}
+.second-section__title {
+  margin-bottom: 40px;
+}
+.second-section__cards-box {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+.second-section__icons-box {
+  display: flex;
+  justify-content: space-evenly;
+}
+.second-section__first-elipse {
+  position: absolute;
+  top: 80px;
+  right: -60px;
+  z-index: -1;
+}
+.second-section__first-elipse-subtract {
+  background: #fff;
+}
+.second-section__second-elipse {
+  position: absolute;
+  top: 364px;
+  left: -60px;
+  z-index: -1;
+}
+.second-section__second-elipse-subtract {
+  background: #fff;
+}
+
+.cards-item {
+  position: relative;
+  width: 360px;
+  height: 360px;
+  display: flex;
+  align-items: flex-end;
+  background: #E2E2E2;
+  border-radius: 10px;
+}
+.cards-item:nth-child(2) {
+  background: #F28B64;
+}
+.cards-item:nth-child(3) {
+  background: #5290EA;
+}
+.cards-item__img {
+  height: 335px;
+}
+.cards-item__text {
+  position: absolute;
+  top: 144px;
+  right: -45px;
+  width: 280px;
+  font-size: 36px;
+  text-align: center;
+  transform: rotate(90deg);
+}
+
+.icons-item {
+  width: 239px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.icons-item__text {
+  font-size: 18px;
+}
+.icons-item__text span {
+  font-size: 48px;
 }/*# sourceMappingURL=style.css.map */

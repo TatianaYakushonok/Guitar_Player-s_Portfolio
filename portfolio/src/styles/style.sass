@@ -21,7 +21,7 @@ a
 
 .main-section
     position: relative
-    height: 800px
+    min-height: 800px
     padding-top: 16px
     background: #F0F0F0
     overflow: hidden
@@ -36,7 +36,7 @@ a
     &__first-elipse
         position: absolute
         top: 129px
-        right: 34px
+        right: 60px
     &__second-elipse
         position: absolute
         top: 650px
@@ -177,3 +177,65 @@ a
         &_big
             width: 188px
             height: 188px
+
+.second-section
+    min-height: 700px
+    padding-top: 32px
+    &__container
+        position: relative
+    &__title
+        margin-bottom: 40px
+    &__cards-box
+        display: flex
+        gap: 30px
+        margin-bottom: 25px
+    &__icons-box
+        display: flex
+        justify-content: space-evenly
+    &__first-elipse
+        position: absolute
+        top: 80px
+        right: -60px
+        z-index: -1
+        &-subtract
+            background: #fff
+    &__second-elipse
+        position: absolute
+        top: 364px
+        left: -60px
+        z-index: -1
+        &-subtract
+            background: #fff
+
+.cards-item
+    position: relative
+    width: 360px
+    height: 360px
+    display: flex
+    align-items: flex-end
+    background: #E2E2E2
+    border-radius: 10px
+    &:nth-child(2)
+        background: $color-accent-2
+    &:nth-child(3)
+        background: $color-accent-1
+    &__img
+        height: 335px
+    &__text
+        position: absolute
+        top: 144px
+        right: -45px
+        width: 280px
+        font-size: 36px
+        text-align: center
+        transform: rotate(90deg)
+
+.icons-item
+    width: 239px
+    display: flex
+    align-items: center
+    gap: 20px
+    &__text
+        font-size: 18px
+        span
+            font-size: 48px
