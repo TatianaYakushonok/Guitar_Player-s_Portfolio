@@ -377,6 +377,10 @@ table {
   font-weight: bold;
   font-style: normal;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat";
   font-weight: regular;
