@@ -644,4 +644,55 @@ a:hover {
 }
 .icons-item__text span {
   font-size: 48px;
+}
+
+.third-section {
+  position: relative;
+  min-height: 640px;
+  background: #F0F0F0;
+  overflow: hidden;
+}
+.third-section__container {
+  min-height: 640px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.third-section__left-wrapper {
+  position: relative;
+  top: -180px;
+}
+.third-section__left-wrapper__title {
+  position: absolute;
+  top: 150px;
+  left: 150px;
+}
+.third-section__first-elipse {
+  position: absolute;
+  top: -120px;
+  right: -100px;
+}
+.third-section__second-elipse {
+  position: absolute;
+  top: 0;
+  left: 80px;
+}
+.third-section__sircle {
+  position: absolute;
+  top: 120px;
+  left: 0;
+}
+.third-section__right-wrapper {
+  width: 479px;
+}
+.third-section__title {
+  margin-bottom: 20px;
+}
+.third-section__text {
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.title__hr_top {
+  bottom: 75px;
 }/*# sourceMappingURL=style.css.map */
