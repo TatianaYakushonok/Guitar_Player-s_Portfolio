@@ -365,6 +365,23 @@ table {
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf");
+  font-weight: regular;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-SemiBold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+body {
+  font-family: "Montserrat";
+  font-weight: regular;
+}
+
 a {
   text-decoration: none;
   color: #000;
@@ -418,6 +435,7 @@ a:hover {
 .nav-menu__list-item {
   margin-right: 64px;
   font-size: 18px;
+  font-weight: bold;
 }
 .nav-menu__list-item:last-child {
   margin-right: 0;
@@ -511,6 +529,7 @@ a:hover {
 .title {
   position: relative;
   font-size: 72px;
+  font-weight: bold;
 }
 .title__hr {
   position: absolute;
@@ -529,6 +548,7 @@ a:hover {
   width: 200px;
   height: 60px;
   font-size: 18px;
+  font-weight: bold;
   color: #fff;
   background: #F28B64;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -629,6 +649,7 @@ a:hover {
   right: -45px;
   width: 280px;
   font-size: 36px;
+  font-weight: bold;
   text-align: center;
   transform: rotate(90deg);
 }
@@ -644,6 +665,7 @@ a:hover {
 }
 .icons-item__text span {
   font-size: 48px;
+  font-weight: bold;
 }
 
 .third-section {
@@ -695,4 +717,22 @@ a:hover {
 
 .title__hr_top {
   bottom: 75px;
+}
+
+.footer {
+  position: relative;
+}
+.footer__container {
+  min-height: 272px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.footer__img {
+  position: absolute;
+  left: -250px;
+  bottom: 0;
+}
+.footer__title {
+  margin-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */
