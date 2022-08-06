@@ -116,7 +116,7 @@ a
         z-index: 1
 
 .right-wrapper
-    width: 372px
+    max-width: 372px
     position: absolute
     top: 150px
     right: 76px
@@ -203,12 +203,14 @@ a
 .second-section
     min-height: 700px
     padding-top: 32px
+    overflow: hidden
     &__container
         position: relative
     &__title
         margin-bottom: 40px
     &__cards-box
         display: flex
+        justify-content: center
         gap: 30px
         margin-bottom: 25px
     &__icons-box
@@ -317,3 +319,273 @@ a
         bottom: 0
     &__title
         margin-bottom: 20px
+
+@media (max-width: 1199px)
+    .container
+        width: 960px
+
+    .left-wrapper
+        img
+            width: 750px
+        &__rectangle-1
+            width: 500px
+            height: 200px
+        &__rectangle-2
+            width: 550px
+            height: 200px
+        &__rectangle-3
+            width: 500px
+            height: 200px
+
+    .right-wrapper
+        right: 20px
+
+    .main-section
+        min-height: 690px
+
+        &__first-elipse
+            right: 10px
+
+        &__second-elipse
+            top: 580px
+
+    .second-section
+        min-height: 600px
+        &__cards-box
+            gap: 20px
+
+    .cards-item
+        width: 300px
+        height: 300px
+        &__img
+            height: 270px
+        &__text
+            top: 120px
+            font-size: 30px
+
+    .icons-item
+        gap: 10px
+
+    .third-section__left-wrapper__title
+        left: 50px
+
+    .third-section__right-wrapper
+        width: 450px
+
+@media (max-width: 991px)
+    .container
+        width: 720px
+
+    .main-section
+        min-height: 530px
+
+        &__first-elipse
+            top: 10px
+            right: -100px
+
+        &__second-elipse
+            top: 410px
+
+    .left-wrapper
+
+        img
+            width: 550px
+
+        &__rectangle-1
+            width: 300px
+            height: 100px
+            top: 100px
+
+        &__rectangle-2
+            width: 330px
+            height: 100px
+            top: 100px
+            left: -20px
+
+        &__rectangle-3
+            width: 300px
+            height: 100px
+            top: 120px
+            left: 30px
+
+    .right-wrapper
+        top: 40px
+        right: -40px
+
+    .title
+        font-size: 60px
+
+    .buttons
+        gap: 10px
+
+        &__main-btn
+            font-size: 16px
+
+    .second-section
+        min-height: 640px
+
+        &__icons-box
+            flex-wrap: wrap
+            gap: 20px
+
+        &__first-elipse
+            top: 10px
+
+        &__second-elipse
+            top: 230px
+            left: -100px
+
+    .cards-item
+        width: 230px
+        height: 230px
+
+        &__img
+            height: 220px
+
+        &__text
+            top: 95px
+            right: -75px
+            font-size: 25px
+
+    .third-section__left-wrapper
+        display: none
+
+    .third-section__right-wrapper
+        margin: 0 auto
+
+    .title__hr_top
+        bottom: 64px
+
+    .footer
+        &__img
+            left: -370px
+
+        &__title
+            max-width: 470px
+
+@media (max-width: 767px)
+    .container
+        width: 540px
+
+    .nav-menu
+        position: fixed
+        top: 0
+        right: -100%
+        width: 50%
+        height: 100vh
+        background: $color-accent-1
+        z-index: 20
+        transition: all 1s ease-in
+        &__list
+            height: 100%
+            flex-direction: column
+            justify-content: space-evenly
+            align-items: center
+            &-item
+                margin-right: 0
+                font-size: 25px
+
+    .humburger
+        position: absolute
+        top: 40px
+        right: 30px
+        width: 30px
+        height: 14px
+        display: flex
+        flex-direction: column
+        gap: 4px
+        z-index: 21
+        span
+            width: 100%
+            height: 2px
+            display: block
+            background: #000
+            transition: all 1s ease-in
+
+    .humburger__active
+        gap: 0
+        span
+            &:nth-child(1)
+                transform: translateY(4px) rotate(-45deg)
+            &:nth-child(2)
+                display: none
+            &:nth-child(3)
+                transform: translateY(3px) rotate(45deg)
+
+    .nav-menu_active
+        right: 0
+
+    .main-section
+        min-height: 800px
+        &__nav-container
+            margin-bottom: 20px
+        &__content-container
+            flex-direction: column-reverse
+            gap: 35px
+        &__first-elipse
+            top: -20px
+            right: 100px
+        &__second-elipse
+            display: none
+
+    .right-wrapper
+        position: unset
+
+    .second-section
+        min-height: 860px
+        &__cards-box
+            flex-wrap: wrap
+
+    .third-section
+        margin-bottom: 30px
+
+    .footer
+        .footer__container
+            flex-direction: column-reverse
+        &__img
+            position: unset
+            width: 500px
+
+@media (max-width: 575px)
+    .container
+        width: 100%
+
+    .main-section
+        &__content-container
+            gap: 0
+        &__first-elipse
+            right: -100px
+
+    .right-wrapper
+        margin-left: 15px
+
+    .title
+        font-size: 35px
+
+    .buttons
+        flex-direction: column
+        gap: 20px
+
+    .second-section
+        padding: 20px 0
+        &__title
+            margin-bottom: 20px
+            margin-left: 15px
+
+    .third-section__text
+        font-size: 16px
+
+    .third-section__right-wrapper
+        padding: 0 15px
+
+    .third-section__title
+        z-index: 12
+
+    .title__hr_top
+        bottom: 35px
+
+    .footer
+        &__container
+            min-height: 170px
+        &__img
+            display: none
