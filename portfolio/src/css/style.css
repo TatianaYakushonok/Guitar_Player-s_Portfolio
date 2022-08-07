@@ -370,12 +370,14 @@ table {
   src: url("../fonts/Montserrat-Regular.ttf");
   font-weight: regular;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-SemiBold.ttf");
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 html {
   scroll-behavior: smooth;
