@@ -6,10 +6,13 @@
   width: 80px;
 }
 
+.carousel {
+  margin-bottom: 20px;
+}
 .carousel-item {
   position: relative;
 }
-.carousel-item img {
+.carousel img {
   height: 650px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -35,4 +38,9 @@
 .carousel-control-next svg {
   width: 32px;
   height: 32px;
+}
+
+h3 {
+  max-width: 750px;
+  margin: 0 auto 20px;
 }/*# sourceMappingURL=style.css.map */
