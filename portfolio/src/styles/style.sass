@@ -176,11 +176,19 @@ a
         border-radius: 100px
         border: none
         cursor: pointer
+        transition: all .3s ease-in
+        &:hover
+            background: rgb(235, 110, 65)
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5)
+            transform: translateY(3px)
     &__icon-btn
         display: flex
         align-items: center
         gap: 12px
         cursor: pointer
+        transition: all .3s ease-in
+        &:hover
+            transform: translateY(3px)
 
 .elipse
     width: 194px
@@ -241,6 +249,12 @@ a
     align-items: flex-end
     background: #E2E2E2
     border-radius: 10px
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    transition: all .3s ease-in
+    &:hover
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5)
+        transform: translateY(5px)
+        cursor: pointer
     &:nth-child(2)
         background: $color-accent-2
     &:nth-child(3)
